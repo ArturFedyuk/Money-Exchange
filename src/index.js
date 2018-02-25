@@ -1,7 +1,6 @@
 module.exports = function makeExchange(currency) {
     result = {};
     if (!currency) return result;
-    if (currency > 10000) return 0;
 
     num = {"H": 50, "Q": 25, "D": 10, "N": 5, "P": 1};
 
@@ -15,6 +14,5 @@ module.exports = function makeExchange(currency) {
             }
         }
     }
-
     return result;
 };
